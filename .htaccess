@@ -1,0 +1,9 @@
+ErrorDocument 403 /
+ErrorDocument 404 /
+AddDefaultCharset koi8_r
+Options +FollowSymLinks
+RewriteEngine	on
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^shneks\.ru$ [NC]
+RewriteRule ^(.*)$ http://www.shneks.ru/$1 [R=301,L]
+RewriteRule ^([^/]+).html$ /index.php?alt_name=$1

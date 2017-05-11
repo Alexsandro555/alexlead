@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /contacts.html
+Host: www.shneks.ru
